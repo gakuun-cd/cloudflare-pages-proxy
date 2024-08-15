@@ -2,7 +2,7 @@ export async function onRequest(context) {
     
 
     //const url = new URL(context.url);
-    cconsole.log(`[LOGGING FROM /hello]: Request came from ${context.request.url}`);
+    console.log(`[LOGGING FROM /hello]: Request came from ${context.request.url}`);
     //print(context);
     
     return new Response("hello", {status: 404})
