@@ -2,7 +2,7 @@ export async function onRequest(context) {
     
 
     const url = new URL(context.url);
-    console.log(context.toString());
+    console.log("12333");
     
 
     // 指定你要代理的目标服务器
