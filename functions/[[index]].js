@@ -4,13 +4,6 @@ export async function onRequest(context) {
     const request = context.request;
     const url = new URL(request.url);
 
-    //return new Response(JSON.stringify(context.params.catchall))
-
-    // 打印原始请求的 URL 和查询参数
-    console.log(`Original URL: ${url.href}`);
-    console.log(`Query Parameters: ${url.searchParams.toString()}`);
-    console.log(`Original Pathname: ${url.pathname}`);
-
     // 检查并处理路径
     if (url.pathname.startsWith('/')) {
         // 修改请求的目标主机名
