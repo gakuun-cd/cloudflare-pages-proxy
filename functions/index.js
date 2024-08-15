@@ -1,7 +1,8 @@
-export async function onRequest(request) {
+export async function onRequest(context) {
+    
 
-    const url = new URL(request.url);
-    console.log(url);
+    const url = new URL(context.url);
+    console.log(context);
     
 
     // 指定你要代理的目标服务器
@@ -13,4 +14,3 @@ export async function onRequest(request) {
     // 转发请求到目标服务器并返回响应
     return await fetch(url.toString(), request);
   }
-
