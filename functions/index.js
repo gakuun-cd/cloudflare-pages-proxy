@@ -1,4 +1,4 @@
-export function onRequest(request) {
+export async function onRequest(request) {
 
     const url = new URL(request.url);
 
@@ -9,6 +9,6 @@ export function onRequest(request) {
     // request.headers.set('X-Forwarded-For', 'your-custom-header');
 
     // 转发请求到目标服务器并返回响应
-    return  fetch(url.toString(), request);
+    return await fetch(url.toString(), request);
   }
 
