@@ -2,7 +2,8 @@ export async function onRequest(context) {
     
 
     //const url = new URL(context.url);
-    console.log(`${context.request}`);
+    console.log(context.request);
+    print(context);
     
     return new Response("hello", {status: 404})
     // 指定你要代理的目标服务器
