@@ -1,6 +1,6 @@
 const addr = 'worker-us-vless.keyfromadd.workers.dev';
 
-export async function onRequest(context) {
+export async function onRequestGet(context) {
     const url = new URL(context.request.url);
 // 打印原始请求的 URL 和查询参数
 console.log(`Original URL: ${url.href}`);
