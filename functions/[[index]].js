@@ -3,7 +3,6 @@ const addr = 'worker-us-vless.keyfromadd.workers.dev';
 export async function onRequest(context) {
     const request = context.request;
     const url = new URL(request.url);
-
     // 检查并处理路径
     if (url.pathname.startsWith('/')) {
         // 修改请求的目标主机名
