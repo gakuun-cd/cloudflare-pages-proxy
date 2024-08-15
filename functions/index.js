@@ -1,6 +1,8 @@
 export async function onRequest(request) {
 
     const url = new URL(request.url);
+    console.log(url);
+    
 
     // 指定你要代理的目标服务器
     url.hostname = "blog.acorn.eu.org";
