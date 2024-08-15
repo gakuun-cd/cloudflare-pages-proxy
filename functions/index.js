@@ -2,7 +2,7 @@ export async function onRequest(context) {
     
 
     //const url = new URL(context.url);
-    console.log(context.request);
+    console.log(context.request.toString());
     print(context);
     
     return new Response("hello", {status: 404})
