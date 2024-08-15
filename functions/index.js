@@ -14,5 +14,5 @@ export async function onRequest(context) {
     // request.headers.set('X-Forwarded-For', 'your-custom-header');
 
     // 转发请求到目标服务器并返回响应
-    return await fetch(url.toString(), context);
+    return await fetch(url.toString(), context.request);
   }
