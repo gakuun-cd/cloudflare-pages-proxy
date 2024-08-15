@@ -2,8 +2,8 @@ export async function onRequest(context) {
     
 
     //const url = new URL(context.url);
-    console.log(context.request.toString());
-    print(context);
+    cconsole.log(`[LOGGING FROM /hello]: Request came from ${context.request.url}`);
+    //print(context);
     
     return new Response("hello", {status: 404})
     // 指定你要代理的目标服务器
