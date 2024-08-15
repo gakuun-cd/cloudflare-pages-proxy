@@ -5,7 +5,7 @@ export async function onRequestGet(context) {
 // 打印原始请求的 URL 和查询参数
 console.log(`Original URL: ${url.href}`);
 console.log(`Query Parameters: ${url.searchParams.toString()}`);
-
+console.log(`Original URL: ${url.pathname}`);
     // 检查并处理路径
     if (url.pathname.startsWith('/')) {
         url.hostname = addr;
@@ -17,6 +17,7 @@ console.log(`Query Parameters: ${url.searchParams.toString()}`);
             body: context.request.body,
             redirect: context.request.redirect,
         });
+        console.log(`Original URL: ${new_request.url.pathname}`);
 
         try {
             // 转发请求到目标服务器
