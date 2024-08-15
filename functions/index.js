@@ -2,7 +2,7 @@ export async function onRequest(context) {
     
 
     const url = new URL(context.url);
-    console.log(`[LOGGING FROM /hello]: Request came from ${context.request.url}`);
+    console.log(`${context}`);
     
 
     // 指定你要代理的目标服务器
