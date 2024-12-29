@@ -1,4 +1,4 @@
-const addr = 'muddy-glade-dc84.1970074429.workers.dev';
+const addr = 'worker-us-vless.keyfromadd.workers.dev';
 
 export async function onRequest(context) {
     const request = context.request;
