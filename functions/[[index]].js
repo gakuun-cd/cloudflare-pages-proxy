@@ -1,4 +1,4 @@
-const addr = 'muddy-glade-dc84.1970074429.workers.dev';
+const addr = 'blue-sky.1970074429.workers.dev';
 
 export async function onRequest(context) {
     const request = context.request;
